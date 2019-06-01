@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <span>shopabc.pl</span>
+            <ul>
+                <li><a href='#section-one'>Dlaczego my</a></li>
+                <li><a href="#section-two">Korzyści</a></li>
+                <li><a href="#prices">Ceny</a></li>
+                <li><a href='#contact'>Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h2>Sprzedawaj więcej!</h2>
+            <p>Otwarcie sklepu na naszej stronie, dramatycznie zwiekszy twoją sprzedaż</p>
+            <div class="button_background">
+                <a href="#">Otwórz swój sklep</a>
+            </div>
+        </div>
+    </header>
+    <section id='section-one' class="section-one">
+        <div class="section-one__container">
+            <h2>Najpopularniejsza platforma sprzedażowa w kraju</h2>
+            <div class="section-one__info">
+                <div class="section-one__info-element">
+                    <div class="circle"></div>
+                    <span>100000+</span>
+                    <span>wizyt dziennie</span>
+                </div>
+                <div class="section-one__info-element">
+                    <div class="circle"></div>
+                    <span>2000000+</span>
+                    <span>obajrzanych każdego dnia produktów</span>
+                </div>
+                <div class="section-one__info-element">
+                    <div class="circle"></div>
+                    <span>10000+</span>
+                    <span>dodawanych wpisów dziennie</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='section-two' class="section-two">
+        <div class="section-two__container">
+            <div class="section-two__offer">
+                <div class="section-two__offer-element first-element">
+                    <h2>Bądź zawsze pierwszy</h2>
+                    <p>Twoj sklep bedzie umieszczony na głównej stronie naszego katalogu, gdzie setki tysięcy potencjalnych klientów ją zobaczy!</p>
+                </div>
+                <div class="background-element">
+                    <div class="background-element__shape"></div>
+                </div>
+            </div>
+            <div class="section-two__offer">
+                <div class="section-two__offer-element second-element">
+                    <h2>Twój sklep jest tam, gdzie Ty jesteś!</h2>
+                    <p>Nieważne czy jesteś na telefonie, tablecie czy komputerze. Wszystkie potrzebne Ci operacje masz w zasięgu ręki.</p>
+                </div>
+                <div class="background-element"></div>
+            </div>
+            <div class="section-two__offer-split">
+                <div class="section-two__offer-element third-element">
+                    <h2>Zwiększ rozpoznawalność swojej marki</h2>
+                    <p>Otwierając sklep na shopabc.pl, nie tylko zwiększysz sprzedaż, ale także powiększysz swoje grono odbiorców i rozpoznawalność marki w internecie.</p>
+                </div>
+                <div class="background-element"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id='prices' class="prices"> 
+
+        <h2>Cennik</h2>
+
+        <div class="price-container">   
+            <div class="basic-price">
+                <h3>Podstawowy</h3>
+                <span>$0</span>
+                <ul class="price-list">
+                    <li>100 MB przestrzeni dyskowej</li>
+                    <li>1 Subdomena</li>
+                    <li>1 konto E-Mail</li>
+                    <li>2 lata licencji</li>
+                    <li>Pełne wsparcie</li>
+                </ul>
+                <a href="#">Rozpocznij</a>
+            </div>
+
+            <div class='professional-price'>
+                <h3>Profesjonalny</h3>
+                <span>$25</span>
+                <span>Oferta ograniczona</span>
+                <ul class="price-list">
+                    <li>500 MB Przestrzeni dyskowej</li>
+                    <li>2 Subdoment</li>
+                    <li>5 Kont E-Mail</li>
+                    <li>Rok licencji</li>
+                    <li>Pełne wsparce</li>
+                </ul>
+                <a href='#'>Rozpocznij</a>
+            </div>
+            
+            <div class="premium-price">
+                <h3>Premium</h3>
+                <span>$60</span>
+                <span>Oferta ograniczona</span>
+                <ul class="price-list">
+                    <li>2 GB przestrzeni dysokwej</li>
+                    <li>4 Subdomeny</li>
+                    <li>20 kont E-Mail</li>
+                    <li>2 lata licencji</li>
+                    <li>Pełne wsparcie</li>
+                </ul>
+                <a href='#'>Rozpocznij</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator">
+        <h2>Oblicz ile zapłacisz</h2>
+        <div class="calculator-container">    
+            <form class="calculator-form">
+                <label>
+                    <input id='products_number' type="text" name="products_number" placeholder="Ilość produktów" maxlength="30" size="400">
+                </label>
+                <label>
+                    <input id='monthly_orders' type="text" name="monthly_orders" placeholder="Szacowana ilość zamówień w miesiącu" size="30">
+                </label>
+                <ul class="calculator-form__shown">
+                    <li id='choose_btn'>Wybierz pakiet</li>
+                    <ul class="calculator-form__hidden hidden">
+                        <li>Podstawowy</li>
+                        <li>Profesjonalny</li>
+                        <li>Premium</li>
+                    </ul>
+                </ul>
+                <label class="check">
+                    <input type="checkbox" name='account_service' value='accountant'>Obsługa księgowa
+                    <span class=checkmark></span>
+                </label>
+                <label class="check">
+                    <input type="checkbox" name="payment_terminal" value='terminal'>Wynajem terminala płatniczego
+                    <span class='checkmark'></span>
+                </label>
+            </form>
+
+            
+            <div class="calculator-result">
+                <div class="calculator-result_element hidden">
+                    <span>Produkty</span>
+                    <span class="products-calculation"></span>
+                    <span class="products-result"></span>
+                </div>
+                <div class="calculator-result_element hidden">
+                    <span>Zamówienia</span>
+                    <span class="orders-calculation"></span>
+                    <span class="orders-result"></span>
+                </div>
+                <div class="calculator-result_element hidden">
+                    <span>Pakiet</span>
+                    <span class="packages-type"></span>
+                    <span class="packages-result"></span>
+                </div>
+                <div class='calculator-result_element hidden'>
+                    <span>Księgowość</span>
+                    <span class="accountancy-result">$35</span>
+                </div>
+                <div class="calculator-result_element hidden">
+                    <span>Terminal</span>
+                    <sapn class="terminal-result">$5</sapn>
+                </div>
+                <div class="summary">
+                    <span>Suma</span>
+                    <span id="summary-total">$0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='contact' class="form-section">
+        <div class="form-container">
+            <div class="form-info">
+                <h2>Masz pytania?</h2>
+                <h3>Zostaw dla nas swój adres mailowy, lub zadzwoń!</h3>
+                <span>info@shopabc.pl</span>
+                <span>123 456 789</span>
+            </div>
+            <div>
+                <form>
+                    <label class="data"> Imię i nazwisko<br>
+                        <input type="text" name="name">
+                    </label><br>
+                    <label class='data'>Email<br>
+                        <input type="email" name='email'>
+                    </label><br>
+                    <label class='check'>
+                        <input type="checkbox" name='terms' value='terms' checked='checked'> Wyrażam zgodę na przetwarzanie danych i kontakt.
+                        <span class="checkmark"></span>
+                    </label><br>
+                    <button type="submit" name='submit'>Wyślij</button>
+                </form>
+            </div>    
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__logo">
+            <span>shopabc.pl</span>
+            <span>© 2019 Wszystkie prawa zastrzeżone</span>
+        </div>
+        <div class="footer__media">
+            <a class='twitter' href='https://twitter.com/potus' target="_blank"></a>
+            <a class='facebook' href='https://www.facebook.com/BezpiecznaZabawa/' target="_blank"></a>
+        </div>
+    </footer>
+</body>
+<script src="js/app.js"></script>
+</html>
